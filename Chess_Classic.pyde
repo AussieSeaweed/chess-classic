@@ -3,9 +3,7 @@ import chess
 
 def setup():
     global game, mouseDown
-    
-    size(1200, 900)
-    frameRate(1000)
+
     textAlign(CENTER, CENTER)
     rectMode(CENTER)
     imageMode(CENTER)

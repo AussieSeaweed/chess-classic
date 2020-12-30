@@ -3,37 +3,11 @@ import move
 import widget
 
 
-# An enumeration class that contains possible chess pieces' colors.
-class COLOR:
-    BLACK = -1
-    WHITE = 1
-
-
-# An enumeration class that contains possible chess piece types.
-class PIECE:
-    KING = 1
-    QUEEN = 2
-    BISHOP = 3
-    KNIGHT = 4
-    ROOK = 5
-    PAWN = 6
-
-
-# A Piece base class that provides the necessary representation and the interface of classes that will be inherited from this class.
 class Piece:
     pieceType = 0
     moves = list()
-    
-    # An __init__ member function that gets called as the Piece instance is created. It creates the representation of the object.
+
     def __init__(self, chessboard, color, r, c, image):
-        self.chessboard = chessboard
-        self.color = color
-        self.r = r
-        self.c = c
-        self.actualR = r
-        self.actualC = c
-        self.image = image
-        self.forward = -chessboard.orientation * color
         self.neverMoved = True
         self.cached = False
         self.lastMoved = -1

@@ -1,1 +1,1 @@
-# Chess-Classic
+# Chess Classic
