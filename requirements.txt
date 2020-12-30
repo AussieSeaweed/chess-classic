@@ -1,2 +1,2 @@
-chess==1.3.2
-processing-py==0.2.2
+chess==1.3.3
+processing-py==0.3.6
